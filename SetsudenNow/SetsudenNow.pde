@@ -168,6 +168,7 @@ void loopTwitter(){
   char msg[256];
 
   if(currentMinutesOfDay > getCurrentMinutesOfDay()){
+    currentMinutesOfDay = getCurrentMinutesOfDay();
     
     float savedPercentage = 100.0 - (electricityConsumptionOfDay * 100 / USUAL_CONSUMPTION);
     
@@ -193,7 +194,6 @@ void loopTwitter(){
     
     updateClock();
     setDateString();
-    currentMinutesOfDay = getCurrentMinutesOfDay();
     electricityConsumptionOfDay = 0.0;
   }
 }
