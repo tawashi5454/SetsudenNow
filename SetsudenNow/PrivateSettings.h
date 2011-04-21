@@ -1,24 +1,34 @@
+
 // NOTE
 // Before uploading to your Arduino board,
 // please replace with your own settings
 
-// The environment ID for your datastreams
-const int environmentId = 12345;
 
-// Your API key (a public secure key is recommended)
-const char *apiKey = "*******************************************";
 
-// REPLACE WITH A PROPER MAC ADDRESS
-byte macAddress[] = { 
-  0x01, 0x23, 0x45, 0x67, 0x89, 0xAB };
+//****** REQUIRED to replace ******/
 
-// Update interval in minutes
-const int updateIntervalInMinutes = 5;
+// Mac address of your Ethernet Shield
+byte macAddress[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
 
-enum TubeModel {
-  LND_712,  // LND
-  SMB_20,   // GSTube
-  J408GAMMA // North Optic
-};
+// The stweitter token
+#define STEWITTER_TOKEN "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 
-const TubeModel tubeModel = LND_712;
+// The Pachube environment ID of your feed
+#define PACHUBE_ENVIRONMENT_ID 0
+
+// Your Pachube API key (a public secure key is recommended)
+#define PACHUBE_API_KEY "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+
+
+
+//****** OPTIONAL to replace ******/
+
+// Update interval in minutes for Pachube
+#define UPDATE_INTERVAL_IN_MINUTE 5
+
+// Your usual daily electricity consumption(in Wh, Japanese average is about 10000 - 12000)
+#define USUAL_CONSUMPTION 12000
+
+// Time difference with UTC(In Japan, use 9)
+#define TIME_ZONE_OFFSET 9
+
