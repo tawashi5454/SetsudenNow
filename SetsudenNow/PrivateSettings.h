@@ -7,17 +7,17 @@
 
 //****** REQUIRED to replace ******/
 
-// Mac address of your Ethernet Shield
+// (1) Mac address of your Ethernet Shield
 byte macAddress[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
 
-// The stweitter token
+// (2) The stweitter token
 #define STEWITTER_TOKEN "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 
-// The Pachube environment ID of your feed
-#define PACHUBE_ENVIRONMENT_ID 0
-
-// Your Pachube API key (a public secure key is recommended)
+// (3) Your Pachube API key (a public secure key is recommended)
 #define PACHUBE_API_KEY "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+
+// (4) The Pachube environment ID of your feed
+#define PACHUBE_ENVIRONMENT_ID 0
 
 
 
