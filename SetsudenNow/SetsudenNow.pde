@@ -44,8 +44,8 @@
 // Sensor Related Constants
 #define CT ((330.0 * 0.99 / 3000.0) / (5.0 / 1024.0))
 #define ANALOG_REFERENCE_PIN 0
-#define ANALOG_SENSOR_1_PIN 3
-#define ANALOG_SENSOR_2_PIN 4
+#define ANALOG_SENSOR_1_PIN 1
+#define ANALOG_SENSOR_2_PIN 2
 
 // Electricity Consumption Related Variables
 double electricityConsumption = 0.0; // Sum of electricity consumption during one Pachube loop
