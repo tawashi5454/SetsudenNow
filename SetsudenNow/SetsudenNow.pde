@@ -195,7 +195,10 @@ void loopTwitter(){
     setDateString();
     electricityConsumptionOfDay = 0.0;
 
-    delay(60 * 1000);
+    for(int i=0; i<120; i++){
+      EthernetDHCP.maintain();
+      delay(500);
+    }
     currentMinutesOfDay = getCurrentMinutesOfDay();
   }
 }
